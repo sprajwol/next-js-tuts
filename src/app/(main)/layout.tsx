@@ -1,6 +1,11 @@
-export const metadata = {
-    title: 'Next.js',
-    description: 'Created',
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: {
+        default: "Next.js Tutorial - Codevolution",
+        template: "%s | Codevolution"
+    },
+    description: 'By next,js',
 };
 
 export default function RootLayout({
